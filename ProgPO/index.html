@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Вход</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form class="form-4">
-        <h1><font color="#333" >Форма входа</font></h1>
+    <form class="form-4" action="..\?code=5">
+        <h1><font color="#333" >Вход</font></h1>
         <p>
             <label for="login">Логин или email</label>
             <input type="text" name="login" placeholder="Логин или email" required>
@@ -20,7 +20,14 @@
         </p>
         <p>
             <input type="submit" name="submit" value="Продолжить">
-        </p>      
+        </p>
     </form>
+    <script>
+        let form = document.querySelector("form");
+        form.onsubmit = () => {
+            if (form.elements.login.value == "admin" && form.elements.password.value == "admin") returnToPreviousPage();
+        }
+    </script>
 </body>
 </html>
+
