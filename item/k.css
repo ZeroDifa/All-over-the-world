@@ -1,0 +1,28 @@
+.container text-center {
+    width: 1500px;
+    height: 100px;
+    margin: 5px auto;
+    max-width: 100%;
+    background-color: #e0c90a;
+}
+.catalog{
+    margin: 40px 100px auto;
+
+}
+.logo{
+    display: flex;
+    height: 90px;
+}
+.pok{    display: flex;
+    margin: 24px
+}
+.pok2{ display: flex;
+    margin: 24px;
+}
+.name{
+    display: flex;
+    margin: 10px;
+}
+.info {
+    font-size: 24px;
+}
